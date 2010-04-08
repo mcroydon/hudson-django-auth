@@ -26,6 +26,9 @@ use this script select ``Authenticate via custom script`` and add the following 
 You'll also want to select an appropriate option under ``Authorization`` in order for the
 plugin to take affect.  ``Logged-in users can do anything`` may be a sane default here.
 
+Note: This script requires at least version 1.1. of the `Script Security Realm`_ plugin.
+Version 1.0 will likely yield a stacktrace.
+
 .. _Script Security Realm: http://wiki.hudson-ci.org/display/HUDSON/Script+Security+Realm
 """
 
