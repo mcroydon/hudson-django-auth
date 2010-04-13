@@ -18,7 +18,10 @@ use this script select ``Authenticate via custom script`` and add the following 
     python /path/to/hudson_django_auth.py
 
 You'll also want to select an appropriate option under ``Authorization`` in order for the
-plugin to take affect.  ``Logged-in users can do anything`` may be a sane default here.
+plugin to take affect.  ``Logged-in users can do anything`` may be a sane default if you
+just want to restrict write access.  If you'd like to restrict more Hudson information, you
+can use ``Matrix-based security`` with little or no ``Anonymous`` access, granting specific
+access to the special ``authenticated`` user.
 
 Note: This script requires at least version 1.1. of the `Script Security Realm`_ plugin.
 Version 1.0 will likely yield a stacktrace.
